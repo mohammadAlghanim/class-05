@@ -25,4 +25,8 @@ if (!skipWelcomingMessage) {
   } else {
     alert("Welcome " + name1 + "!");
   }
+
+
 }
+ 
+
