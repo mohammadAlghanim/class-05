@@ -26,3 +26,33 @@ if (!skipWelcomingMessage) {
     alert("Welcome " + name1 + "!");
   }
 }
+
+let answers = [];
+
+function getAnswer(question) {
+  let answer = prompt(question);
+  if (!answer) {
+    answer = "Invalid";
+  }
+  return answer;
+}
+
+function addAnswer(answer) {
+  answers.push(answer);
+}
+
+function printAnswers() {
+  for (let i = 0; i < answers.length; i++) {
+    console.log(answers[i]);
+  }
+}
+
+let question1 = "Do you like reading books? (Yes/No)";
+let question2 = "Have you ever gone bungee jumping? (Yes/No)";
+let question3 = "Do you enjoy playing video games? (Yes/No)";
+
+addAnswer(getAnswer(question1));
+addAnswer(getAnswer(question2));
+addAnswer(getAnswer(question3));
+
+printAnswers();
